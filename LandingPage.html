@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Landing Page</title>
+    <link rel="stylesheet" href="LandingPage.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header id="home">
+        <nav>
+            <div class="container">
+                <h1 class="h1">MyWebWorld</h1>
+                <div class="nav-links">
+                    <a href="#home"><button class="nav-btn">Home</button></a>
+                    <a href="#learn-more"><button class="nav-btn">Learn More</button></a>
+                    <a href="#services"><button class="nav-btn">Services</button></a>
+                    <a href="#contact"><button class="nav-btn">Contact</button></a>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="hero">
+            <div class="container">
+                <h1>Welcome to Web Development World</h1>
+                <p>Dive into the vibrant realm of Web Development World, where innovation thrives. 
+                    Explore the forefront of web development trends, 
+                    unlocking boundless opportunities for your digital journey ahead.</p>
+                <a href="#learn-more" class="btn">Learn More</a>
+            </div>
+        </div>
+    </header>
+    <hr>
+
+    <section id="learn-more" class="content-section">
+        <div class="container">
+            <h2>What We Offer</h2>
+            <div class="cards">
+                <div class="card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Unlock the power of the web with HTML basics and advanced techniques.</p>
+                    <a href="https://www.w3schools.com/html/html_intro.asp" class="btn-card">Explore HTM</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>Elevate your web design skills with CSS tips, tricks, and best practices.</p>
+                    <a href="https://www.w3schools.com/css/" class="btn-card">Explore CSS</a>
+                </div>
+                <div class="card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Transform static websites into dynamic experiences with JavaScript mastery.</p>
+                    <a href="https://www.w3schools.com/js/" class="btn-card">Explore JS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    
+    <section id="services" class="content-section dark-bg">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="cards">
+                <div class="card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Web Design</h3>
+                    <p>Create captivating online experiences with our expert web design services.</p>
+                    <a href="https://www.thoughtco.com/introduction-to-web-design-3470022" class="btn-card">Learn More</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Development</h3>
+                    <p>Turn your ideas into reality with our expert web development services.</p>
+                    <a href="https://www.geeksforgeeks.org/web-development/" class="btn-card">Learn More</a>
+                </div>
+                <div class="card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile App Development</h3>
+                    <p>Elevate your online presence with customized mobile app solutions tailored to your needs.</p>
+                    <a href="https://www.techtarget.com/searchapparchitecture/definition/mobile-application-development" class="btn-card">Learn More</a>
+                </div>                
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section id="contact" class="content-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form action="save.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="conbtn">Send Message</button>
+            </form>
+        </div>
+    </section>
+    <hr>
+    
+    <!-- Footer Section -->
+    <footer id="footer">
+        <div class="container-fluid">
+            <!-- Social Media Icons -->
+            <div class="social-icons mt-4">
+                <a href="https://www.facebook.com/" target="_blank" class="social-link" id="facebook">
+                    <i class="fab fa-facebook"></i> <span class="social-name">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/" target="_blank" class="social-link" id="instagram">
+                    <i class="fab fa-instagram"></i> <span class="social-name">Instagram</span>
+                </a>
+                <a href="https://web.whatsapp.com/" target="_blank" class="social-link" id="whatsapp">
+                    <i class="fab fa-whatsapp"></i> <span class="social-name">WhatsApp</span>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank" class="social-link" id="youtube">
+                    <i class="fab fa-youtube"></i> <span class="social-name">YouTube</span>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank" class="social-link" id="linkedin">
+                    <i class="fab fa-linkedin"></i> <span class="social-name">LinkedIn</span>
+                </a>
+            </div>
+            <!-- Copyright and Terms -->
+            <div class="footer-text mt-4">
+                <p>&copy; 2024 Your Company. All Rights Reserved.</p>
+                <a href="file:///C:/xampp/htdocs/PHP/Terms%20of%20Services2.html" class="footer-link">Terms of Service</a> | <a href="Privacy and policy2.html" class="footer-link">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('scrolled');
+            } else {
+                nav.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
